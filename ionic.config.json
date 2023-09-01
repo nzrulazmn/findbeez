@@ -1,0 +1,8 @@
+{
+  "name": "findbeez",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "725d03cb"
+}
