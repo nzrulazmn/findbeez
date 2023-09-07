@@ -15,12 +15,16 @@ export class AuthService {
 
   constructor() { }
   
+  // to be connected to the page service
+  
   // async createUser (email, password) {
   //   createUserWithEmailAndPassword(auth, email, password)
   //   .then((userCredential)=> {
   //     const user = userCredential.user;
   //   })
   // }
+
+  //to be connected to the page service
 
   // async signinUser (email, password) {
   //   signInWithEmailAndPassword(auth, email, password)
