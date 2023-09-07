@@ -14,6 +14,10 @@ export class LoginPage implements OnInit {
     this.navCtrl.navigateForward('credential/signup');
   }
 
+  forgotPage(){
+    this.navCtrl.navigateForward('credential/forgot');
+  }
+
   ngOnInit() {
   }
 
