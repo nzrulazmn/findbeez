@@ -17,6 +17,7 @@ export class SignupPage implements OnInit {
               private authService: AuthService,
               private builder: FormBuilder
               ) {
+                // initiallise form in constructor
                 this.userForm = this.builder.group({
                   username: new FormControl('', Validators.compose([
                     Validators.required
@@ -41,6 +42,7 @@ export class SignupPage implements OnInit {
   }
 
   ngOnInit() {
+    // call form, to initialise
     this.userForm;
   }
 
