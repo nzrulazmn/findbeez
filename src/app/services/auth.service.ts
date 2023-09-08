@@ -17,12 +17,14 @@ export class AuthService {
   
   // to be connected to the page service
   
-  // async createUser (email, password) {
-  //   createUserWithEmailAndPassword(auth, email, password)
-  //   .then((userCredential)=> {
-  //     const user = userCredential.user;
-  //   })
-  // }
+  createUser (email: string, password: string) {
+    return new Promise<any>((resolve, reject) => {
+      createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential)=> {
+        const user = userCredential.user;
+      })
+    })
+  }
 
   //to be connected to the page service
 
