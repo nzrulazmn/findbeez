@@ -1,0 +1,70 @@
+*{
+    background-color: white;
+}
+
+ion-content{
+    --ion-background-color: white;
+}
+
+.headercolor{
+    --background: transparent;
+    --color: black;
+    --border-style: none;
+    padding-top: 10px;
+}
+
+ion-item{
+    border-radius: 20px;
+    width: 60%; height: 6%;
+    margin-left: 10px;
+    --background: rgb(233, 233, 233);
+    --border-style: none;
+}
+
+ion-icon{
+    color: black;
+}
+
+.searchIcon{
+    background-color: rgb(233, 233, 233);
+}
+
+ion-input{
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+.friendBox{
+    width: 30px; height: 30px;
+    margin-right: 10px;
+}
+
+.posts{
+    display: flex;
+    width: 90%; height: 80%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.navigation{
+    display: flex;
+    width: 90%; height: 10%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 10px;
+    background-color: #f7e017;
+    border: 1px solid #f7e017;
+    border-radius: 25px;
+}
+
+.navbox{
+    display: grid;
+    flex: auto; height: 100%;
+    background-color: transparent;
+}
+
+.icons{
+    width: 50%; height: 50%;
+    margin: auto;
+    background-color: transparent;
+}

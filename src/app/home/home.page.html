@@ -1,13 +1,32 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>home</ion-title>
+<ion-header>
+  <ion-toolbar class="headercolor">
+    <ion-item slot="start">
+      <ion-icon name="search" class="searchIcon"></ion-icon> &nbsp;
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-icon name="people" slot="end" class="friendBox"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!--content here-->
+  <div class="posts"></div>
+  <!--navigation-->
+  <div class="navigation">
+    <div class="navbox">
+      <ion-icon name="home" class="icons" color="medium"></ion-icon>
+    </div>
+    <div class="navbox">
+      <ion-icon name="search" class="icons"></ion-icon>
+    </div>
+    <div class="navbox">
+      <ion-icon name="add-circle" class="icons" color="danger"></ion-icon>
+    </div>
+    <div class="navbox">
+      <ion-icon name="notifications" class="icons"></ion-icon>
+    </div>
+    <div class="navbox">
+      <ion-icon name="person" class="icons"></ion-icon>
+    </div>
+  </div>
 </ion-content>
