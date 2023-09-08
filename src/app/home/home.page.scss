@@ -41,17 +41,18 @@ ion-input{
 
 .posts{
     display: flex;
-    width: 90%; height: 80%;
+    width: 100%; height: 89%;
     margin-left: auto; margin-right: auto;
-    margin-top: 20px;
-    border: 1px solid black;
+    margin-top: 5px;
 }
 
 .navigation{
     display: flex;
-    width: 90%; height: 10%;
+    position: absolute;
+    bottom: 15px;
+    left: 0; right: 0;
     margin-left: auto; margin-right: auto;
-    margin-top: 10px;
+    width: 90%; height: 6%;
     background-color: #f7e017;
     border: 1px solid #f7e017;
     border-radius: 25px;
@@ -67,4 +68,86 @@ ion-input{
     width: 50%; height: 50%;
     margin: auto;
     background-color: transparent;
+}
+
+//for swiper slides
+swiper-container{
+    width: 100%; height: 100%;
+}
+
+swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+    border: 0.5px solid #f1f1f1;
+    
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reports{
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 100%; height: 10%;
+    background-color: transparent;
+    color: red;
+    padding-left: 15px; padding-top: 15px;
+}
+
+.reportBtn{
+    background-color: transparent;
+    width: 20px; height: 20px;
+}
+
+.caption{
+    display: flex;
+    position: absolute;
+    bottom: 10px; background-color: transparent;
+    width: 100%; height: 15%;
+}
+
+.leftCaption{
+    flex: 80%; height: 100%;
+    background-color: transparent;
+}
+
+.topCaption, .bottomCaption{
+    display: block;
+    width: 100%; height: 40%;
+    background-color: transparent;
+    padding-left: 10px; padding-top: 10px;
+    color: white;
+}
+
+.bottomCaption{
+    height: 60%;
+    padding-top: 0px; padding-bottom: 20px;
+}
+
+b{
+    background-color: transparent;
+}
+
+.rightCaption{
+    flex: 20%; height: 100%;
+    background-color: transparent;
+}
+
+.topCap, .bottomCap{
+    display: block;
+    width: 100%; height: 50%;
+    background-color: transparent;
+}
+
+.bottomIcons{
+    display: block;
+    margin-top: 10px;
+    width: 30px; height: 30px;
+    background-color: transparent;
+    margin-left: auto; margin-right: auto;
 }
