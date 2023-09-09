@@ -41,9 +41,12 @@ ion-input{
 
 .posts{
     display: flex;
-    width: 100%; height: 89%;
+    position: absolute;
+    left: 0; right: 0;
     margin-left: auto; margin-right: auto;
     margin-top: 5px;
+    width: 100%; height: 80%;
+    bottom: 11vh;
 }
 
 .navigation{
@@ -81,10 +84,11 @@ swiper-slide{
     align-items: center;
     justify-content: center;
     color: black;
+    background-color: black;
 
     border: 0.5px solid #f1f1f1;
     
-    background-size: auto;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -107,13 +111,16 @@ swiper-slide{
 .caption{
     display: flex;
     position: absolute;
-    bottom: 10px; background-color: transparent;
+    bottom: 0px;
+    padding-bottom: 10px; 
+    background-color: black; opacity: 85%;
     width: 100%; height: 15%;
 }
 
 .leftCaption{
     flex: 80%; height: 100%;
     background-color: transparent;
+    padding-left: 10px;
 }
 
 .topCaption, .bottomCaption{
@@ -140,7 +147,7 @@ b{
 
 .topCap, .bottomCap{
     display: block;
-    width: 100%; height: 50%;
+    width: 100%; height: 40%;
     background-color: transparent;
 }
 
@@ -150,4 +157,26 @@ b{
     width: 30px; height: 30px;
     background-color: transparent;
     margin-left: auto; margin-right: auto;
+}
+
+@media screen and (max-width: 400px){
+    .caption{
+        font-size: 12px;
+    }
+
+    .posts{
+        height: 77%;
+    }
+
+    .bottomCaption{
+        padding-top: 10px;
+    }
+
+    .topCap, .bottomCap{
+        height: 35%;
+    }
+
+    .bottomIcons{
+        width: 20px; height: 20px;
+    }
 }
