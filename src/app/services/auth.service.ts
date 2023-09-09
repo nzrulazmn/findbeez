@@ -26,13 +26,23 @@ export class AuthService {
     })
   }
 
-  //to be connected to the page service
+  // to be connected to the page service
 
-  // async signinUser (email, password) {
-  //   signInWithEmailAndPassword(auth, email, password)
-  //   .then((userCredential) => {
-  //     const user = userCredential.user;
-  //   })
-  // }
+  loginUser (email: string, password: string) {
+    return new Promise<void>((resolve, reject) => {
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential)=> {
+        const user = userCredential.user;
+        resolve();
+      }).catch(() => {
+        reject();
+      });
+    })
+  }
 
 }
+    
+  
+
+  
+

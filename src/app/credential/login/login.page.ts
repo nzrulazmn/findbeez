@@ -3,6 +3,7 @@ import { NavController } from '@ionic/angular';
 import { AuthService } from 'src/app/services/auth.service';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -10,7 +11,25 @@ import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms'
 })
 export class LoginPage implements OnInit {
 
-  constructor(private navCtrl: NavController) { }
+  // create a variable for userinput in form
+  userForm: FormGroup;
+
+  constructor(private navCtrl: NavController,
+    private authService: AuthService,
+    private builder: FormBuilder
+    ) {
+      // initiallise form in constructor
+      this.userForm = this.builder.group({
+        email: new FormControl('', Validators.compose([
+          Validators.required,
+          Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
+        ])),
+        password: new FormControl('', Validators.compose([
+          Validators.minLength(8),
+          Validators.required
+        ])),
+      });
+    }
 
   loginPage(){
     this.navCtrl.navigateForward('credential/signup');
@@ -21,6 +40,19 @@ export class LoginPage implements OnInit {
   }
 
   ngOnInit() {
+    this.userForm;
+  }
+
+  signinUser(value: { email: any; password: any; }){
+    this.authService.loginUser(value.email, value.password)
+    // return promise
+    .then(() => {
+      
+    }, 
+    error => {
+      //error message
+    });
+    return this.navCtrl.navigateForward("home");
   }
 
 }
