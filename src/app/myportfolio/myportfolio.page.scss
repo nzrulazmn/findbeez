@@ -1,0 +1,85 @@
+*{
+    background-color: white;
+}
+
+ion-content{
+    --ion-background-color: white;
+}
+
+p,h1,h2,h3{
+    color: black;
+}
+
+.hero{
+    display: block;
+    width: 100%; height: 15vh;
+    border: 1px solid black;
+    background: url('https://placehold.co/768x250');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.myDesc{
+    display: block;
+    width: 95%; height: 17vh;
+    margin-top: 40px;
+    margin-left: auto; margin-right: auto;
+    border: 1px solid black;
+    background: url('https://placehold.co/840x320');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.descBox{
+    display: flex;
+    height: 100%;
+}
+
+.descLeft, .descRight{
+    flex: 50%;
+    height: auto;
+    border: 1px dashed black;
+}
+
+.myimg{
+    display: block;
+    width: 90%; height: 90%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 7px;
+    border: 1px solid black;
+    background: url('https://placehold.co/650x500');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dltop, .dlbottom{
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.dltop{
+    height: 30%;
+}
+
+.dlbottom{
+    height: 70%;
+}
+
+.navBox{
+    display: flex;
+    width: 95%; height: 6vh;
+    margin-top: 30px;
+    margin-left: auto; margin-right: auto;
+}
+
+.nav{
+    flex: 30%;
+    border: 1px solid blue;
+}
+
+.space{
+    flex: 5%;
+}
