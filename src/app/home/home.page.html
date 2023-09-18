@@ -165,8 +165,12 @@
   </swiper-container>
 
   <!--navigation-->
+
+  <!-- use [routerLink]="['/destination']" to redirect to pages -->
+  <!-- something to remember starting the destination with "/" means it starts at "app" file -->
+  
   <div class="navigation">
-    <div class="navbox">
+    <div class="navbox" [routerLink]="['/home']">
       <ion-icon name="home" class="icons" color="medium"></ion-icon>
     </div>
     <div class="navbox">
@@ -179,7 +183,8 @@
       <ion-icon name="notifications" class="icons"></ion-icon>
     </div>
     <div class="navbox">
-      <ion-icon name="person" class="icons"></ion-icon>
+      <ion-icon name="person" class="icons" [routerLink]="['/myportfolio']"></ion-icon>
     </div>
   </div>
+  
 </ion-content>
