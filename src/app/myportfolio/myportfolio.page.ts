@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { register } from 'swiper/element/bundle'; //u need this
+
+register();
 
 @Component({
   selector: 'app-myportfolio',
