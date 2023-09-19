@@ -14,11 +14,12 @@ ion-content{
 }
 
 ion-item{
-    border-radius: 20px;
-    width: 60%; height: 6%;
-    margin-left: 10px;
-    --background: rgb(233, 233, 233);
+    --background: transparent;
+    --color: black;
     --border-style: none;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin-left: 10px;
 }
 
 ion-icon{
@@ -26,12 +27,7 @@ ion-icon{
 }
 
 .searchIcon{
-    background-color: rgb(233, 233, 233);
-}
-
-ion-input{
-    background-color: rgb(233, 233, 233);
-    color: black;
+    background-color: transparent;
 }
 
 .friendBox{

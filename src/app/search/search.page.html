@@ -1,13 +1,91 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>search</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">search</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!--top navigation-->
+  <div class="topNav">
+    <div class="job">Jobseeking</div> <!--for jobseeking-->
+    <div class="recruit">Recruiting</div> <!--for recruiting-->
+  </div>
+
+  <!--search bar-->
+  <ion-item class="searchBar">
+    <ion-icon name="search" class="searchIcon"></ion-icon> &nbsp;
+    <ion-input></ion-input>
+  </ion-item>
+
+  <!--title-->
+  <div class="title">Jobs in Brunei - 100 results</div>
+  <!--result box--> <!--5 total of box will appear-->
+  <div class="rsltBox">
+    <div class="result"> <!--loop here-->
+      <div class="left">
+        <div class="image"></div>
+      </div> <!--image-->
+      <div class="right">
+        <div class="topic">Job Title Here</div> <!--the title-->
+        <div class="name">Company Name Here</div> <!--the company name/user-->
+        <div class="area">Area Here</div> <!--location-->
+      </div> <!--description-->
+    </div>
+
+    <!--another loop-->
+    <div class="result"> <!--loop here-->
+      <div class="left">
+        <div class="image"></div>
+      </div> <!--image-->
+      <div class="right">
+        <div class="topic">Job Title Here</div> <!--the title-->
+        <div class="name">Company Name Here</div> <!--the company name/user-->
+        <div class="area">Area Here</div> <!--location-->
+      </div> <!--description-->
+    </div>
+    <div class="result"> <!--loop here-->
+      <div class="left">
+        <div class="image"></div>
+      </div> <!--image-->
+      <div class="right">
+        <div class="topic">Job Title Here</div> <!--the title-->
+        <div class="name">Company Name Here</div> <!--the company name/user-->
+        <div class="area">Area Here</div> <!--location-->
+      </div> <!--description-->
+    </div>
+    <div class="result"> <!--loop here-->
+      <div class="left">
+        <div class="image"></div>
+      </div> <!--image-->
+      <div class="right">
+        <div class="topic">Job Title Here</div> <!--the title-->
+        <div class="name">Company Name Here</div> <!--the company name/user-->
+        <div class="area">Area Here</div> <!--location-->
+      </div> <!--description-->
+    </div>
+    <div class="result"> <!--loop here-->
+      <div class="left">
+        <div class="image"></div>
+      </div> <!--image-->
+      <div class="right">
+        <div class="topic">Job Title Here</div> <!--the title-->
+        <div class="name">Company Name Here</div> <!--the company name/user-->
+        <div class="area">Area Here</div> <!--location-->
+      </div> <!--description-->
+    </div>
+    
+  </div>
+
+  <!--navigation-->
+  <div class="navigation">
+    <div class="navbox">
+      <ion-icon name="home" class="icons"></ion-icon>
+    </div>
+    <div class="navbox">
+      <ion-icon name="search" class="icons" color="medium"></ion-icon>
+    </div>
+    <div class="navbox">
+      <ion-icon name="add-circle" class="icons" color="danger"></ion-icon>
+    </div>
+    <div class="navbox">
+      <ion-icon name="notifications" class="icons"></ion-icon>
+    </div>
+    <div class="navbox">
+      <ion-icon name="person" class="icons"></ion-icon>
+    </div>
+  </div>
 </ion-content>

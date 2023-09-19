@@ -1,0 +1,142 @@
+*{
+    background-color: white;
+}
+
+ion-content{
+    --ion-background-color: white;
+}
+
+p,h1,h2,h3,a{
+    color: black;
+}
+
+//copy navigation n navbox
+.navigation{
+    display: flex;
+    position: fixed;
+    bottom: 15px;
+    left: 0; right: 0;
+    margin-left: auto; margin-right: auto;
+    width: 90%; height: 6%;
+    background-color: #f7e017;
+    border: 1px solid #f7e017;
+    border-radius: 25px;
+}
+
+.navbox{
+    display: grid;
+    flex: auto; height: 100%;
+    background-color: transparent;
+}
+
+ion-icon{
+    color: black;
+}
+
+.icons{
+    width: 50%; height: 50%;
+    margin: auto;
+    background-color: transparent;
+}
+
+//top navigation
+.topNav{
+    display: flex;
+    position: fixed; top: 0;
+    width: 100%; height: 7vh;
+    background-color: rgb(231, 231, 231);
+}
+
+.job, .recruit{
+    flex: 50%; height: 100%;
+    background-color: transparent;
+    padding-top: 20px; text-align: center;
+    color: black; font-size: 22px;
+    font-weight: bold;
+}
+
+.job{ //us js to make the color for navigation change
+    background-color: #f7e017;
+    border: 1px solid black;
+}
+
+//search bar here
+.searchBar{
+    display: block;
+    width: 60%; height: 40px;
+    margin-left: 20px;
+    margin-top: 100px; margin-bottom: 30px;
+    border-radius: 40px;
+}
+
+.searchIcon{
+    background: transparent;
+}
+
+ion-item{
+    --background: rgb(230, 230, 230);
+}
+
+ion-input{
+    --background: rgb(230, 230, 230);
+    --color: black;
+}
+
+.title{
+    display: block;
+    width: 100%; height: 10px;
+    color: black; font-size: 18px;
+    padding-left: 25px;
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+
+.rsltBox{
+    display: block;
+    width: 90%; height: 60%;
+    margin-left: auto; margin-right: auto;
+    overflow-y: scroll;
+}
+
+.result{
+    display: flex;
+    width: 100%; height: 20%;
+    background-color: rgb(230, 230, 230);
+}
+
+.left, .right{
+    background-color: transparent;
+    border-bottom: 3px solid white;
+}
+
+.left{
+    flex: 30%; height: 100%;
+}
+
+.right{
+    flex: 70%; height: 100%;
+    color: black;
+}
+
+.image{
+    display: block;
+    width: 80%; height: 80%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: auto; margin-right: auto;
+}
+
+.topic, .name, .area{
+    background-color: transparent;
+    width: 100%; height: 25%;
+    padding-left: 10px;
+}
+
+.topic{
+    margin-top: 15px;
+    font-size: 18px; font-weight: bold;
+}
+
+.name, .area{
+    font-size: 14px;
+}
