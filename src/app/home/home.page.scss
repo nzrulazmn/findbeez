@@ -13,11 +13,14 @@ ion-content{
     padding-top: 10px;
 }
 
+ion-input{
+    --background: rgb(230, 230, 230);
+}
+
 ion-item{
-    --background: transparent;
+    --background: rgb(230, 230, 230);
     --color: black;
     --border-style: none;
-    border: 1px solid black;
     border-radius: 40px;
     margin-left: 10px;
 }

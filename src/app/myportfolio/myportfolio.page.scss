@@ -8,6 +8,7 @@ ion-content{
 
 p,h1,h2,h3,a{
     color: black;
+    background: transparent;
 }
 
 //copy navigation n navbox
@@ -63,19 +64,19 @@ ion-icon{
     width: 95%; height: 17vh;
     margin-top: 40px;
     margin-left: auto; margin-right: auto;
-    background: url('https://placehold.co/840x320');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: rgb(212, 209, 209);
 }
 
 .descBox{
     display: flex;
     height: 100%;
+    background: transparent;
 }
 
 .descLeft, .descRight{
     flex: 50%;
     height: auto;
+    background: transparent;
 }
 
 .myimg{
@@ -91,11 +92,13 @@ ion-icon{
 .dltop, .dlbottom{
     display: block;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 15px;
+    background: transparent;
 }
 
 .dltop{
     height: 30%;
+    padding-top: 10px;
 }
 
 .dlbottom{
@@ -107,11 +110,13 @@ ion-icon{
     width: 95%; height: 6vh;
     margin-top: 30px;
     margin-left: auto; margin-right: auto;
+    text-align: center; color: black;
+    line-height: 50px;
 }
 
 .nav{
     flex: 30%;
-    border: 1px solid blue;
+    background-color: rgb(212, 209, 209);
 }
 
 .space{
@@ -128,57 +133,69 @@ ion-icon{
     background-repeat: no-repeat;
 }
 
+
+//gallery
 .galleryBox{
     display: block;
-    width: 100%; height: 22vh;
-    margin-top: 30px; margin-bottom: 30px;
+    width: 95%; height: 18vh;
+    margin-left: auto; margin-right: auto;
+    margin-top: 5px; margin-bottom: 50px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 
 .galleryBox:nth-last-child(2){
-    margin-bottom: 30%;
+    margin-bottom: 100px;
 }
 
-.galleryTop{
-    display: flex;
-    width: 100%; height: 20%;
-}
-
-.galleryBott{
-    width: 95%; height: 80%;
-    margin-left: auto; margin-right: auto;
-    overflow-x: scroll;
-    border: 1px solid brown;
-}
-
-.gtLeft, .gtRight{
-    height: 100%;
-    padding-left: 20px;
-    line-height: 5px; font-weight: bold;
-    font-size: 18px;
-}
-
-.gtRight{
-    flex: 30%;
-    font-weight: lighter;
-    font-size: 16px;
-}
-
-.gtLeft{
-    flex: 70%;
-}
-
-.gallerySwiper, .testimonialSwiper{
+.gallerySlides{
     display: inline-block;
-    width: 60%; height: 100%;
-    margin-left: 10px;
-    background: url('https://placehold.co/500x400');
+    width: 45%; height: 100%;
+    background: url('https://placehold.co/500x460');
     background-size: contain;
     background-repeat: no-repeat;
+    margin-left: 10px;
 }
 
-.testimonialSwiper{
-    width: 80%;
-    background: url('https://placehold.co/600x400');
+.gallerySlides:nth-child(1){
+    margin-left: 0;
+}
+
+.title{
+    display: flex;
+    width: 95%; height: 20px;
+    margin-top: 25px;
+    margin-left: auto; margin-right: auto;
+}
+
+.leftTitle, .rightTitle{
+    height: 100%;
+    color: black; padding-left: 10px;
+}
+
+.leftTitle{
+    flex: 75%;
+    font-size: 18px; font-weight: bold;
+}
+
+.rightTitle{
+    flex: 25%;
+    font-size: 16px; color: blue;
+    text-decoration: underline;
+}
+
+//testimonials
+.testimonialSlide{
+    display: inline-block;
+    width: 65%; height: 100%;
+    background: url('https://placehold.co/700x460');
     background-size: contain;
     background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.testimonialSlide:nth-child(1){
+    margin-left: 0;
 }
