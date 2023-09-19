@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PostingPageRoutingModule } from './posting-routing.module';
 
 import { PostingPage } from './posting.page';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { PostingPage } from './posting.page';
     IonicModule,
     PostingPageRoutingModule
   ],
-  declarations: [PostingPage]
+  declarations: [PostingPage],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class PostingPageModule {}

@@ -72,20 +72,20 @@
 
   <!--navigation-->
   <div class="navigation">
-    <div class="navbox">
-      <ion-icon name="home" class="icons"></ion-icon>
+    <div class="navbox" [routerLink]="['/home']">
+      <ion-icon name="home" class="icons" [routerLink]="['/home']"></ion-icon>
     </div>
     <div class="navbox">
       <ion-icon name="search" class="icons" color="medium"></ion-icon>
     </div>
     <div class="navbox">
-      <ion-icon name="add-circle" class="icons" color="danger"></ion-icon>
+      <ion-icon name="add-circle" class="icons" color="danger" [routerLink]="['/posting']"></ion-icon>
     </div>
     <div class="navbox">
-      <ion-icon name="notifications" class="icons"></ion-icon>
+      <ion-icon name="notifications" class="icons" [routerLink]="['/notification']"></ion-icon>
     </div>
     <div class="navbox">
-      <ion-icon name="person" class="icons"></ion-icon>
+      <ion-icon name="person" class="icons" [routerLink]="['/myportfolio']"></ion-icon>
     </div>
   </div>
 </ion-content>

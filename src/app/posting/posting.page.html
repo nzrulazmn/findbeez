@@ -1,13 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>posting</ion-title>
+  <ion-toolbar class="headercolor">
+    <ion-buttons>
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">posting</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!--slide-->
+  <swiper-container class="bigBox" autoplay="1000" direction="horizontal">
+    <swiper-slide class="slide"> <!--content-->
+      <div class="image"></div> <!--image of job-->
+      <div class="title">Post a Job</div> <!--title-->
+      <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Obcaecati repudiandae ex alias suscipit beatae optio minima natus possimus,</div>
+      <div class="slideBtn">Continue</div> <!--will redirect to job posting page-->
+    </swiper-slide>
+
+    <!--slide for portfolio posting-->
+    <swiper-slide class="slide">
+      <div class="image"></div> <!--image of portfolio-->
+      <div class="title">Post Portfolio</div> <!--title-->
+      <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Obcaecati repudiandae ex alias suscipit beatae optio minima natus possimus,</div>
+      <div class="slideBtn">Continue</div> <!--will redirect to portfolio posting page-->
+    </swiper-slide>
+  </swiper-container>
 </ion-content>

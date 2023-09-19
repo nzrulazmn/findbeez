@@ -1,0 +1,78 @@
+*{
+    background-color: white;
+}
+
+ion-content{
+    --ion-background-color: white;
+}
+
+ion-toolbar{
+    --background: #f7e017;
+}
+
+ion-buttons{
+    width: 20%;
+    display: block;
+    background-color: #f7e017;
+    --border-style: none;
+}
+
+ion-back-button{
+    --background: #f7e017;
+    --border-style: none;
+}
+
+.headercolor{
+    --color: black;
+    --border-style: none;
+    padding-top: 10px;
+}
+
+//box
+.bigBox{
+    display: block;
+    width: 90%; height: 70%;
+    margin-top: 100px;
+    margin-left: auto; margin-right: auto;
+}
+
+.slide{
+    display: block;
+    width: 90%; height: 100%;
+    margin-left: auto; margin-right: auto;
+}
+
+//slide content
+.image{
+    display: block;
+    width: 100%; height: 60%;
+    background: url('https://placehold.co/1100x1040');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.title{
+    display: block;
+    width: 100%; height: 40px;
+    color: black; text-align: center;
+    font-size: 24px; font-weight: bold;
+    margin-top: 15px;
+}
+
+.sub{
+    display: block;
+    width: 100%; height: 60px;
+    color: black; text-align: center;
+    padding: 10px;
+}
+
+.slideBtn{
+    display: block;
+    width: 40%; height: 30px;
+    color: black; text-align: center;
+    margin-left: auto; margin-right: auto;
+    font-weight: bold; font-size: 20px;
+    margin-top: 30px; padding-top: 4px;
+    border-radius: 40px;
+    background-color: #f7e017;
+}

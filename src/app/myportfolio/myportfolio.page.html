@@ -6,7 +6,7 @@
   <div class="myDesc">
     <div class="descBox">
       <div class="descLeft">
-        <div class="dltop"><p>Name here</p></div> <!--username sini-->
+        <div class="dltop"><p>Name here <ion-icon name="pencil"></ion-icon></p></div> <!--username sini-->
         <div class="dlbottom"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div> <!--description sini-->
       </div>
       <div class="descRight">
@@ -55,17 +55,17 @@
 
   <!--navigation-->
   <div class="navigation">
-    <div class="navbox">
-      <ion-icon name="home" class="icons"></ion-icon>
+    <div class="navbox" [routerLink]="['/home']">
+      <ion-icon name="home" class="icons" [routerLink]="['/home']"></ion-icon>
     </div>
     <div class="navbox">
-      <ion-icon name="search" class="icons"></ion-icon>
+      <ion-icon name="search" class="icons" [routerLink]="['/search']"></ion-icon>
     </div>
     <div class="navbox">
-      <ion-icon name="add-circle" class="icons" color="danger"></ion-icon>
+      <ion-icon name="add-circle" class="icons" color="danger" [routerLink]="['/posting']"></ion-icon>
     </div>
     <div class="navbox">
-      <ion-icon name="notifications" class="icons"></ion-icon>
+      <ion-icon name="notifications" class="icons" [routerLink]="['/notification']"></ion-icon>
     </div>
     <div class="navbox">
       <ion-icon name="person" class="icons" color="medium"></ion-icon>
