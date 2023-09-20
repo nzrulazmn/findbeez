@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: PostingPage
+  },
+  {
+    path: 'job',
+    loadChildren: () => import('./job/job.module').then( m => m.JobPageModule)
+  },
+  {
+    path: 'portfolio',
+    loadChildren: () => import('./portfolio/portfolio.module').then( m => m.PortfolioPageModule)
   }
 ];
 

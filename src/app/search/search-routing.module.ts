@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: SearchPage
+  },
+  {
+    path: 'job-detail',
+    loadChildren: () => import('./job-detail/job-detail.module').then( m => m.JobDetailPageModule)
+  },
+  {
+    path: 'user-detail',
+    loadChildren: () => import('./user-detail/user-detail.module').then( m => m.UserDetailPageModule)
   }
 ];
 
