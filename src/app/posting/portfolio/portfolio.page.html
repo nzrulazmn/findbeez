@@ -1,13 +1,33 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>portfolio</ion-title>
+  <ion-toolbar class="headercolor">
+    <ion-buttons>
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">portfolio</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!--image-->
+  <div class="image"></div>
+  <!--descriptions-->
+  <div class="box">
+    Content must correspond to our community rules and be appropriate for all ages. 
+    This limitation guarantees that the submitted picture or video conforms with the platform's laws and regulations, 
+    as well as maintaining a level of appropriateness for all users. The specifics of the limitation would be determined by the platform's standards 
+    and the type of the information being posted. 
+    All postings must be real, truthful, and complete in terms of the positions they promote, as well as comply with our terms and conditions.
+  </div>
+  <!--posting form-->
+  <form action="">
+    <ion-item>
+      <ion-input type="file"></ion-input>
+    </ion-item>
+    <h5>Write a captions*</h5>
+    <ion-item>
+      <ion-textarea placeholder="Tips:  Maintain a professional tone and avoid contentious themes that might harm your profile.
+
+Bonus: Provide value to your audience by creating material that is instructive, instructional, or entertaining. Share your thoughts, advice, and industry news."></ion-textarea>
+    </ion-item>
+    <ion-button>Post now</ion-button>
+  </form>
 </ion-content>

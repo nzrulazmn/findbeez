@@ -14,7 +14,7 @@
       <div class="title">Post a Job</div> <!--title-->
       <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Obcaecati repudiandae ex alias suscipit beatae optio minima natus possimus,</div>
-      <div class="slideBtn">Continue</div> <!--will redirect to job posting page-->
+      <div class="slideBtn" [routerLink]="['/posting/job']">Continue</div> <!--will redirect to job posting page-->
     </swiper-slide>
 
     <!--slide for portfolio posting-->
@@ -23,7 +23,7 @@
       <div class="title">Post Portfolio</div> <!--title-->
       <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Obcaecati repudiandae ex alias suscipit beatae optio minima natus possimus,</div>
-      <div class="slideBtn">Continue</div> <!--will redirect to portfolio posting page-->
+      <div class="slideBtn" [routerLink]="['/posting/portfolio']">Continue</div> <!--will redirect to portfolio posting page-->
     </swiper-slide>
   </swiper-container>
 </ion-content>
