@@ -50,11 +50,12 @@ export class SignupPage implements OnInit {
   signupUser(value: { email: any; password: any; }){
     this.authService.createUser(value.email, value.password)
     // return promise
-    .then(() => {}, 
+    .then(() => {
+      return this.navCtrl.navigateForward("credential/login");
+    }, 
     error => {
       //error message
     });
-    return this.navCtrl.navigateForward("credential/login");
   }
 
 }

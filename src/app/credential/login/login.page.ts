@@ -47,12 +47,11 @@ export class LoginPage implements OnInit {
     this.authService.loginUser(value.email, value.password)
     // return promise
     .then(() => {
-      
+      return this.navCtrl.navigateForward("home");
     }, 
     error => {
       //error message
     });
-    return this.navCtrl.navigateForward("home");
   }
 
 }
