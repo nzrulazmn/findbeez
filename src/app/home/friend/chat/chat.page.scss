@@ -1,0 +1,111 @@
+*{
+    background-color: white;
+}
+
+ion-content{
+    --ion-background-color: white;
+}
+
+ion-toolbar{
+    --background: #f7e017;
+}
+
+ion-footer ion-toolbar{
+    height: 8vh;
+}
+
+ion-buttons{
+    width: auto;
+    max-width: fit-content;
+    display: block;
+    background-color: #f7e017;
+    --border-style: none;
+    margin-left: 10px;
+}
+
+ion-back-button{
+    --background: #f7e017;
+    --border-style: none;
+}
+
+.headercolor{
+    --color: black;
+    --border-style: none;
+    padding-top: 10px;
+}
+
+//font
+p,h1,h2,h3,h4,h5{
+    color: black;
+}
+
+//date box
+.date{
+    display: block;
+    width: auto; height: auto;
+    padding-top: 20px;
+}
+
+.date p{
+    color: rgb(138, 138, 138);
+    text-align: center;
+}
+
+.other, .mine{
+    display: block;
+    width: 100%; height: auto;
+    padding: 10px; 
+    padding-left: 20px; padding-right: 30px;
+    color: black;
+    overflow: auto;
+}
+
+.other p, .mine p{
+    margin-bottom: 0;
+    background-color: transparent;
+    text-align: left;
+}
+
+.mine p{
+    text-align: right;
+}
+
+.other div, .mine div{
+    display: inline-block;
+    width: auto; height: auto;
+    max-width: 60%;
+    padding: 10px;
+    padding-left: 20px; padding-right: 20px;
+    border-radius: 20px 20px 20px 0px;
+    background-color: #f7e11786;
+    float: left;
+}
+
+.mine div{
+    border-radius: 20px 20px 0px 20px;
+    background-color: #eeeeee;
+    float: right; 
+}
+
+//for sending message
+.message{
+    display: flex;
+    width: 95%; height: auto;
+    padding-left: 10px; padding-right: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: auto; margin-right: auto;
+    background-color: transparent;
+}
+
+.message ion-input{
+    --background: #f7e017;
+    flex: 90%; height: auto;
+    color: black;
+}
+
+.message ion-icon{
+    background: transparent;
+    display: inline-block;
+    flex: 10%; height: auto;
+}
