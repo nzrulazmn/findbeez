@@ -13,13 +13,13 @@ ion-toolbar{
 ion-buttons{
     width: 25%;
     display: block;
-    background-color: #f7e017;
-    --border-style: none;
+    background-color: transparent;
 }
 
 ion-back-button{
-    --background: #f7e017;
+    background-color: transparent;
     --border-style: none;
+    --border-radius: 0;
 }
 
 .headercolor{

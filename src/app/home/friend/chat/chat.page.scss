@@ -10,22 +10,16 @@ ion-toolbar{
     --background: #f7e017;
 }
 
-ion-footer ion-toolbar{
-    height: 8vh;
-}
-
 ion-buttons{
-    width: auto;
-    max-width: fit-content;
+    width: 25%;
     display: block;
-    background-color: #f7e017;
-    --border-style: none;
-    margin-left: 10px;
+    background-color: transparent;
 }
 
 ion-back-button{
-    --background: #f7e017;
+    background-color: transparent;
     --border-style: none;
+    --border-radius: 0;
 }
 
 .headercolor{
