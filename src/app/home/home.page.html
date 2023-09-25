@@ -4,7 +4,7 @@
       <ion-icon name="search" class="searchIcon"></ion-icon> &nbsp;
       <ion-input placeholder="Search Username..."></ion-input>
     </ion-item>
-    <ion-icon name="people" slot="end" class="friendBox"></ion-icon>
+    <ion-icon name="people" slot="end" class="friendBox" [routerLink]="['/home/friend']"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
   <swiper-container class="posts" autoplay="500" direction="vertical">
     <!--content here-->
     <swiper-slide style="background-image: url('../../assets/img/1.jpeg');">
-    <div class="reports">
+    <div class="reports" [routerLink]="['/home/report']"> <!--different report button-->
       <ion-icon name="warning" class="reportBtn" color="danger"></ion-icon>
     </div>
     <div class="caption">

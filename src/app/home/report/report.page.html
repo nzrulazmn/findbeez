@@ -1,13 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>report</ion-title>
+  <ion-toolbar class="headercolor">
+    <ion-buttons>
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">report</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!--report information-->
+  <div class="info">
+    <h3>Why are you reporting this post?</h3>
+    <p>Your report is anonymous, contact the local emergency services right once if someone is in immediate danger.</p>
+  </div>
+  <!--report buttons-->
+  <div class="btn">
+    <h5>False Information</h5> <!--every h5 is button and automatically submitted once clicked!-->
+    <h5>Hate speech or symbols</h5>
+    <h5>Harassment or bullying</h5>
+    <h5>Violence or dangerous organisations</h5>
+    <h5>Fraud or scam</h5>
+  </div>
+  <!--report input-->
+  <form action="" class="inp">
+    <p>Something else?</p>
+    <ion-textarea placeholder="Add your report descriptions in this comment box..."></ion-textarea>
+    <ion-button>Send</ion-button>
+  </form>
 </ion-content>

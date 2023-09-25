@@ -1,0 +1,119 @@
+*{
+    background-color: white;
+}
+
+ion-content{
+    --ion-background-color: white;
+}
+
+ion-toolbar{
+    --background: #f7e017;
+}
+
+ion-buttons{
+    width: 20%;
+    display: block;
+    background-color: #f7e017;
+    --border-style: none;
+}
+
+ion-back-button{
+    --background: #f7e017;
+    --border-style: none;
+}
+
+.headercolor{
+    --color: black;
+    --border-style: none;
+    padding-top: 10px;
+}
+
+//font
+p,h1,h2,h3,h4,h5{
+    color: black;
+}
+
+//add friend below
+.box1{
+    display: block;
+    width: 100%; height: 28vh;
+    padding: 20px;
+}
+
+.box1 h3{
+    font-weight: bold;
+}
+
+.box1 p{
+    color: rgb(153, 153, 153);
+}
+
+.box1 ion-input{
+    --background: rgb(241, 241, 241);
+    --padding-start: 20px;
+    --border-radius: 10px;
+    width: 80%; height: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+//friend list
+.box2{
+    display: block;
+    width: 100%; height: 60vh;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.friend{
+    display: flex;
+    width: 100%; height: 90px;
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.friend:nth-last-child(1){
+    border: none;
+}
+
+.avatar{
+    flex: 20%;
+}
+
+.avatar div{
+    display: block;
+    width: 90%; height: 80%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.info{
+    flex: 60%;
+    line-height: 2px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.info h4{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info p{
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+}
+
+.icon{
+    flex: 20%;
+}
+
+.icon ion-icon{
+    display: block;
+    width: 70%; height: 70%;
+    margin-left: auto; margin-right: auto;
+    margin-top: 10px;
+}
