@@ -47,12 +47,12 @@ export class AuthService {
     })
   }
 
-  updateUsername (newName : string) {
+  updateUser (newName : string) {
     const cUser = auth.currentUser;
         return new Promise<any>((resolve,reject) => {
           if (cUser != null) {
             updateProfile(cUser, {
-              displayName: "test"
+              displayName: newName
             }).then(() => {
   
             }).catch((error) => {

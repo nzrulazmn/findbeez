@@ -21,13 +21,20 @@ export class MyportfolioPage implements OnInit {
   }
 
   ngOnInit() {
+
+  }
+
+  ionViewWillEnter(){
+    this.getUserdata();
+  }
+
+  getUserdata() {
     const auth = getAuth();
     const user = auth.currentUser;
     if (user != null) {
       this.displayName = user.displayName;
       this.userImg = user.photoURL;
     }
-
   }
 
 
