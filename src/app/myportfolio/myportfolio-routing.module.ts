@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: MyportfolioPage
+  },
+  {
+    path: 'editportfolio',
+    loadChildren: () => import('./editportfolio/editportfolio.module').then( m => m.EditportfolioPageModule)
   }
 ];
 

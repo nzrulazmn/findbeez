@@ -1,8 +1,8 @@
 <ion-content [fullscreen]="true">
   <!--top navigation-->
   <div class="topNav">
-    <div class="job">Jobseeking</div> <!--for jobseeking-->
-    <div class="recruit">Recruiting</div> <!--for recruiting-->
+    <div class="job">Aspirant</div> <!--for jobseeking-->
+    <div class="recruit">Scouting</div> <!--for recruiting-->
   </div>
 
   <!--search bar-->
@@ -15,7 +15,7 @@
   <div class="title">Jobs in Brunei - 100 results</div>
   <!--result box--> <!--5 total of box will appear-->
   <div class="rsltBox">
-    <div class="result"> <!--loop here-->
+    <div class="result" [routerLink]="['/search/job-detail']"> <!--loop here-->
       <div class="left">
         <div class="image"></div>
       </div> <!--image-->

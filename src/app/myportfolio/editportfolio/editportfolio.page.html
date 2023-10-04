@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="headercolor">
+    <ion-buttons>
+      <ion-back-button color="light" text="Edit Resume"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form action="" class="formBox">
+    <!--show profile image here-->
+    <div class="disp"></div>
+    <!--upload profile image here-->
+    <ion-input type="file"></ion-input>
+    <!--username-->
+    <h5>Username*</h5>
+    <ion-input type="text" placeholder="Edit Username..."></ion-input>
+    <!--bio-->
+    <h5>Bio*</h5>
+    <ion-textarea placeholder="Edit bio..."></ion-textarea>
+    <!--select banner-->
+    <h5>Banner</h5>
+    <ion-select placeholder="Select Banner">
+      <ion-select-option>Banner 1</ion-select-option>
+      <ion-select-option>Banner 2</ion-select-option>
+      <ion-select-option>Banner 3</ion-select-option>
+      <ion-select-option>Banner 4</ion-select-option>
+    </ion-select>
+    <ion-button>Save Resume</ion-button>
+  </form>
+</ion-content>
